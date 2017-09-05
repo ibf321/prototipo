@@ -1,0 +1,28 @@
+"pt-BR":
+  activerecord:
+    models:
+      donor: Doador
+    attributes:
+      donor:
+        id: "Identificador"  
+        situation: "Situação"
+        social_name: "Razão Social"
+        fantasy_name: "Nome Fantazia"
+        type_doner: "Tipo de Doador"
+        cnpj_namber: "Nº CNPJ"
+        cpf: "CPF"
+        legal_responsible: "Responsável Legal"
+        rg_responsible: "RG do Responsável"
+        cpf_responsible: "CPF do Responsável"
+        registration_date: "Dada do Cadastro"
+        address: "Endereço"
+        district: "Bairro"
+        city: "Cidade"
+        complement: "Complemento"
+        email: "Email"
+        activity: "Atividade"
+        phone: "Telefone"
+        withdrawal_day: "Dias de Retiradas"
+        obs: "Observarlção"
+        created_at: "Criado em"
+    

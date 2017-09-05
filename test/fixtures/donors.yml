@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  situation: false
+  social_name: MyString
+  fantasy_name: MyString
+  type_doner: MyString
+  cnpj_namber: MyString
+  cpf: MyString
+  legal_responsible: MyString
+  rg_responsible: MyString
+  cpf_responsible: MyString
+  registration_date: 2017-09-03
+  address: MyString
+  district: MyString
+  city: MyString
+  complement: MyString
+  email: MyString
+  activity: MyString
+  phone: MyString
+  withdrawal_day: MyString
+  obs: MyText
+
+two:
+  situation: false
+  social_name: MyString
+  fantasy_name: MyString
+  type_doner: MyString
+  cnpj_namber: MyString
+  cpf: MyString
+  legal_responsible: MyString
+  rg_responsible: MyString
+  cpf_responsible: MyString
+  registration_date: 2017-09-03
+  address: MyString
+  district: MyString
+  city: MyString
+  complement: MyString
+  email: MyString
+  activity: MyString
+  phone: MyString
+  withdrawal_day: MyString
+  obs: MyText

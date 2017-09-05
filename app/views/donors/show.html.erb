@@ -1,0 +1,55 @@
+<%- model_class = Donor -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:situation) %>:</strong></dt>
+  <dd><%= @donor.situation %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:social_name) %>:</strong></dt>
+  <dd><%= @donor.social_name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:fantasy_name) %>:</strong></dt>
+  <dd><%= @donor.fantasy_name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:type_doner) %>:</strong></dt>
+  <dd><%= @donor.type_doner %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:cnpj_namber) %>:</strong></dt>
+  <dd><%= @donor.cnpj_namber %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:cpf) %>:</strong></dt>
+  <dd><%= @donor.cpf %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:legal_responsible) %>:</strong></dt>
+  <dd><%= @donor.legal_responsible %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:rg_responsible) %>:</strong></dt>
+  <dd><%= @donor.rg_responsible %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:cpf_responsible) %>:</strong></dt>
+  <dd><%= @donor.cpf_responsible %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:registration_date) %>:</strong></dt>
+  <dd><%= @donor.registration_date %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:address) %>:</strong></dt>
+  <dd><%= @donor.address %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:district) %>:</strong></dt>
+  <dd><%= @donor.district %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:city) %>:</strong></dt>
+  <dd><%= @donor.city %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:complement) %>:</strong></dt>
+  <dd><%= @donor.complement %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:email) %>:</strong></dt>
+  <dd><%= @donor.email %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:activity) %>:</strong></dt>
+  <dd><%= @donor.activity %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:phone) %>:</strong></dt>
+  <dd><%= @donor.phone %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:withdrawal_day) %>:</strong></dt>
+  <dd><%= @donor.withdrawal_day %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:obs) %>:</strong></dt>
+  <dd><%= @donor.obs %></dd>
+</dl>
+
+<%= link_to t('.back', :default => t("helpers.links.back")),
+              donors_path, :class => 'btn btn-default'  %>
+<%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_donor_path(@donor), :class => 'btn btn-default' %>
+<%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              donor_path(@donor),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>

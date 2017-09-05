@@ -1,0 +1,160 @@
+<%= form_for @donor, :html => { :class => "form-horizontal donor" } do |f| %>
+
+  <% if @donor.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@donor.errors.count, "error") %> prohibited this donor from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @donor.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :situation, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :situation, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:situation) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :social_name, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :social_name, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:social_name) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :fantasy_name, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :fantasy_name, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:fantasy_name) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :type_doner, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :type_doner, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:type_doner) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :cnpj_namber, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :cnpj_namber, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:cnpj_namber) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :cpf, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :cpf, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:cpf) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :legal_responsible, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :legal_responsible, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:legal_responsible) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :rg_responsible, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :rg_responsible, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:rg_responsible) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :cpf_responsible, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :cpf_responsible, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:cpf_responsible) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :registration_date, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :registration_date, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:registration_date) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :address, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :address, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:address) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :district, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :district, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:district) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :city, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :city, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:city) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :complement, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :complement, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:complement) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :email, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :email, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:email) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :activity, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :activity, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:activity) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :phone, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :phone, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:phone) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :withdrawal_day, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :withdrawal_day, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:withdrawal_day) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :obs, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :obs, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:obs) %>
+  </div>
+
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                donors_path, :class => 'btn btn-default' %>
+    </div>
+  </div>
+
+<% end %>
